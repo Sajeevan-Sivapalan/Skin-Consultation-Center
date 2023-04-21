@@ -45,7 +45,6 @@ public class SkinConsultationManagerMain implements SkinConsultationManager {
 					int doctorCount = countDoctor();
 					
 					if(doctorCount < 10) {
-						addToFile(doctor);
 						boolean isAvailable = isDoctorAvailable(medicalLicenceNumber);
 						if(isAvailable == false){
 							boolean result = addDoctor(doctor);
@@ -261,24 +260,6 @@ public class SkinConsultationManagerMain implements SkinConsultationManager {
 		}
 		
 		return result;
-	}
-	
-	public static void addToFile(Doctor doctor) {
-		FileOutputStream fos = null;
-		ObjectOutputStream oos = null;
-		
-		try{
-		
-			fos = new FileOutputStream("DoctorFile.txt", true);
-			oos = new ObjectOutputStream(fos);
-			oos.writeObject(doctor);
-			
-			fos.close();
-			oos.close();
-		}
-		catch(Exception e){
-			System.out.println(e);
-		}
 	}
 	
 	public static ArrayList<Doctor> getDoctorList(){
