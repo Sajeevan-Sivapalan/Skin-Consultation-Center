@@ -4,6 +4,7 @@ This is a application for skin cosultation center. This application have console
 ## Languages
 
 - Java
+- Database : MySQL
 
 ## Required software to run this project 
 
