@@ -1,5 +1,5 @@
 # Skin-Consultation-Center
-This is a application for skin cosultation center. This application have console and GUI interfaces. The console use to manage doctor and doctor consultation. GUI use to view doctor list and allow patients to book a consultation and view booked consulation. 
+This is an application for a skin consultation center. This application has console and GUI interfaces. The console is used to manage doctor and doctor consultations. GUI uses to view doctor lists and allow patients to book a consultation and view booked consulation.
 
 ## Languages
 
